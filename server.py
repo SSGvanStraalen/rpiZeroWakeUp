@@ -28,8 +28,8 @@ def index():
     return 'Hello world'
 
 
-@app.route('/setColor', methods=['POST'])
-def setColor():
+@app.route('/setColortje', methods=['POST'])
+def setColortje():
     if request.method == 'POST':
         setColor(255, 255, 255)
         print ('test')
@@ -52,6 +52,7 @@ def setAlarm():
     t = threading.Timer(timeCountdown ,setColor, [0, 255, 255])
     t.start()
     return 'timeSet now and alarm_time'
+
 
 @app.route('/stopAlarm')
 def stopAlarm():
