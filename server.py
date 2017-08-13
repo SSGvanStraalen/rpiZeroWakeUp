@@ -32,9 +32,9 @@ def index(path):
 def setColortje():
     if request.method == 'POST':
         rgb =  request.get_json();
-        r = int(request.get_json()[r])
-        g = int(request.get_json()[g])
-        b = int(request.get_json()[b])
+        r = int(request.get_json()['r'])
+        g = int(request.get_json()['g'])
+        b = int(request.get_json()['b'])
         setColor(r, g, b)
     return 'done'
 
