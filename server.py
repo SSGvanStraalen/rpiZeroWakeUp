@@ -34,6 +34,7 @@ def setColortje():
         setColor(255, 255, 255)
         print ('test')
         print (request.data)
+        print (request.get_json())
     else:
         print ('geen ideee')
 
