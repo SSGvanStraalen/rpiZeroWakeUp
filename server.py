@@ -31,7 +31,8 @@ def index(path):
 @app.route('/setColortje', methods=['POST'])
 def setColortje():
     if request.method == 'POST':
-        setColor(255, 255, 255)
+        rgb =  request.get_json();
+        setColor(rgb.r, rgb.g, rgb.b)
         print ('test')
         print (request.data)
         print (request.get_json())
