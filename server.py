@@ -3,7 +3,7 @@ import time
 import datetime
 import threading
 
-from flask import Flask
+from flask import Flask, request, send_from_directory
 from flask import request
 app = Flask(__name__)
 
@@ -22,10 +22,10 @@ def clearLights ():
     uh.clear()
     return
 
-@app.route('/')
-def index():
+@app.route('/<path:path>')
+def index(path):
     setColor(0, 255, 255)
-    return 'Hello world'
+    return send_from_directory('public', path)
 
 
 @app.route('/setColortje', methods=['POST'])
