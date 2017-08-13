@@ -30,8 +30,11 @@ def index():
 
 @app.route('/setColor', methods=['POST'])
 def setColor():
-    print ''+request.data
-    setColor(255, 255, 255)
+    if request.method == 'POST'
+        setColor(255, 255, 255)
+        print 'test'
+    else:
+        print 'geen ideee'
 
 
 @app.route('/setAlarm')
