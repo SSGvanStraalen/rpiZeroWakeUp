@@ -37,6 +37,8 @@ def setColor():
     else:
         print ('geen ideee')
 
+    return 'hi'
+
 
 @app.route('/setAlarm')
 def setAlarm():
