@@ -30,8 +30,8 @@ def index():
 
 @app.route('/setColor', methods=['POST'])
 def setColor():
-    print request.data
-    setColor(255, 255, 255);
+    print ''+request.data
+    setColor(255, 255, 255)
 
 
 @app.route('/setAlarm')
