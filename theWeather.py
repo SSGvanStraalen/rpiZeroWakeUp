@@ -8,3 +8,4 @@ class TheWeatherMan:
 		    # This means something went wrong.
 		    print('stuk')
 		return resp.json()['query']['results']['channel']['item']['condition']
+		

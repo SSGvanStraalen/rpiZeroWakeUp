@@ -35,7 +35,6 @@ def getWeatherAndSetColor ():
 
 @app.route('/<path:path>')
 def index(path):
-    setColor(config['testLight']['r'], config['testLight']['g'], config['testLight']['b'])
     return send_from_directory('public', path)
 
 @app.route('/testGetWeather')
@@ -48,7 +47,6 @@ def setConfig():
     config = request.get_json()
     return 'done'
 
-
 @app.route('/setColortje', methods=['POST'])
 def setColortje():
     if request.method == 'POST':
@@ -58,7 +56,6 @@ def setColortje():
         b = int(request.get_json()['b'])
         setColor(r, g, b)
     return 'done'
-
 
 @app.route('/setAlarm')
 def setAlarm():
