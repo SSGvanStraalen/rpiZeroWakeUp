@@ -1,7 +1,15 @@
 {
 	"weather": {
+		"0": {
+				"name": "tornado",
+				"color": {
+					"r": 255,
+					"g": 255,
+					"b": 255
+			}
+		},
 		"1": {
-				"name": "sunny",
+				"name": "tropical storm",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -9,7 +17,7 @@
 			}
 		},
 		"2": {
-				"name": "sunny",
+				"name": "hurricane",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -17,87 +25,87 @@
 			}
 		},
 		"3": {
-				"name": "sunny",
+				"name": "servere thunderstorms",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"4": {
-				"name": "sunny",
+				"name": "thunderstorms",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"5": {
-				"name": "sunny",
+				"name": "mixed rain and snow",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"6": {
-				"name": "sunny",
+				"name": "mixed rain and sleet",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"7": {
-				"name": "sunny",
+				"name": "mixed snow and sleet",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"8": {
-				"name": "sunny",
+				"name": "freezing drizzle",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"9": {
-				"name": "sunny",
+				"name": "drizzle",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"10": {
-				"name": "sunny",
+				"name": "freezing rain",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"11": {
-				"name": "sunny",
+				"name": "showers",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"12": {
-				"name": "sunny",
+				"name": "showers",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"13": {
-				"name": "sunny",
+				"name": "snow flurries",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -105,7 +113,7 @@
 			}
 		},
 		"14": {
-				"name": "sunny",
+				"name": "light snow showers",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -113,7 +121,7 @@
 			}
 		},
 		"15": {
-				"name": "sunny",
+				"name": "blowing snow",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -121,7 +129,7 @@
 			}
 		},
 		"16": {
-				"name": "sunny",
+				"name": "snow",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -129,23 +137,23 @@
 			}
 		},
 		"17": {
-				"name": "sunny",
+				"name": "hail",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"18": {
-				"name": "sunny",
+				"name": "sleet",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"19": {
-				"name": "sunny",
+				"name": "dust",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -153,7 +161,7 @@
 			}
 		},
 		"20": {
-				"name": "sunny",
+				"name": "foggy",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -161,7 +169,7 @@
 			}
 		},
 		"21": {
-				"name": "sunny",
+				"name": "haze",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -169,7 +177,7 @@
 			}
 		},
 		"22": {
-				"name": "sunny",
+				"name": "smoky",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -177,7 +185,7 @@
 			}
 		},
 		"23": {
-				"name": "sunny",
+				"name": "blustery",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -185,143 +193,143 @@
 			}
 		},
 		"24": {
-				"name": "sunny",
+				"name": "windy",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"25": {
-				"name": "sunny",
+				"name": "cold",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"26": {
-				"name": "sunny",
+				"name": "cloudy",
 				"color": {
 					"r": 255,
-					"g": 255,
-					"b": 255
+					"g": 0,
+					"b": 0
 			}
 		},
 		"27": {
-				"name": "sunny",
+				"name": "mostly cloudy",
 				"color": {
 					"r": 255,
-					"g": 255,
-					"b": 255
+					"g": 0,
+					"b": 0
 			}
 		},
 		"28": {
-				"name": "sunny",
+				"name": "mostly cloudy",
 				"color": {
 					"r": 255,
-					"g": 255,
-					"b": 255
+					"g": 0,
+					"b": 0
 			}
 		},
 		"29": {
-				"name": "sunny",
+				"name": "partly cloudy",
 				"color": {
 					"r": 255,
-					"g": 255,
-					"b": 255
+					"g": 0,
+					"b": 0
 			}
 		},
 		"30": {
-				"name": "sunny",
+				"name": "partly cloudy",
 				"color": {
 					"r": 255,
-					"g": 255,
-					"b": 255
+					"g": 0,
+					"b": 0
 			}
 		},
 		"31": {
-				"name": "sunny",
+				"name": "clear",
 				"color": {
-					"r": 255,
+					"r": 0,
 					"g": 255,
-					"b": 255
+					"b": 0
 			}
 		},
 		"32": {
 				"name": "sunny",
 				"color": {
-					"r": 255,
+					"r": 0,
 					"g": 255,
-					"b": 255
+					"b": 0
 			}
 		},
 		"33": {
-				"name": "sunny",
+				"name": "fair",
 				"color": {
-					"r": 255,
+					"r": 0,
 					"g": 255,
-					"b": 255
+					"b": 0
 			}
 		},
 		"34": {
-				"name": "sunny",
+				"name": "fair",
 				"color": {
-					"r": 255,
+					"r": 0,
 					"g": 255,
-					"b": 255
+					"b": 0
 			}
 		},
 		"35": {
-				"name": "sunny",
+				"name": "mixed rain and hail",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"36": {
-				"name": "sunny",
+				"name": "hot",
 				"color": {
 					"r": 255,
 					"g": 255,
-					"b": 255
+					"b": 0
 			}
 		},
 		"37": {
-				"name": "sunny",
+				"name": "isolated thunderstorms",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"38": {
-				"name": "sunny",
+				"name": "scatterd thunderstorms",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"39": {
-				"name": "sunny",
+				"name": "scatterd thunderstorms",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"40": {
-				"name": "sunny",
+				"name": "scatterd showers",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"41": {
-				"name": "sunny",
+				"name": "heavy snow",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -329,7 +337,7 @@
 			}
 		},
 		"42": {
-				"name": "sunny",
+				"name": "scatterd snow showers",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -337,7 +345,7 @@
 			}
 		},
 		"43": {
-				"name": "sunny",
+				"name": "heavy snow",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -345,23 +353,23 @@
 			}
 		},
 		"44": {
-				"name": "sunny",
+				"name": "partly cloudy",
 				"color": {
 					"r": 255,
 					"g": 255,
-					"b": 255
+					"b": 0
 			}
 		},
 		"45": {
-				"name": "sunny",
+				"name": "thundershowers",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"46": {
-				"name": "sunny",
+				"name": "snow showers",
 				"color": {
 					"r": 255,
 					"g": 255,
@@ -369,15 +377,15 @@
 			}
 		},
 		"47": {
-				"name": "sunny",
+				"name": "isolated thundershowers",
 				"color": {
-					"r": 255,
-					"g": 255,
+					"r": 0,
+					"g": 0,
 					"b": 255
 			}
 		},
 		"3200": {
-				"name": "sunny",
+				"name": "not available",
 				"color": {
 					"r": 255,
 					"g": 255,

@@ -69,7 +69,7 @@ def setAlarm():
     if timeCountdown <= 0:
         timeCountdown = (alarm_time + datetime.timedelta(days=1) - now).total_seconds()
 
-    t = threading.Timer(timeCountdown ,setColor, [0, 255, 255])
+    t = threading.Timer(timeCountdown ,getWeatherAndSetColor)
     t.start()
     return 'timeSet now and alarm_time'
 
