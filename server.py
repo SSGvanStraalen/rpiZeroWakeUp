@@ -4,11 +4,14 @@ import datetime
 import threading
 
 from flask import Flask, request, send_from_directory
-from flask import request
+from persistor import DataPersistor
+from theWeather import TheWeatherMan
 app = Flask(__name__)
 
 uh.set_layout(uh.PHAT)
 uh.brightness(0.5)
+
+config = DataPersistor.loadData('data.json')
 
 def setColor (r, g, b):
     "this sets the color on the unicorn"
@@ -22,10 +25,28 @@ def clearLights ():
     uh.clear()
     return
 
+def getWeatherAndSetColor ():
+    code = TheWeatherMan.getTodaysWeather()['code']
+    r = config['weather'][code]['color']['r']
+    g = config['weather'][code]['color']['g']
+    b = config['weather'][code]['color']['b']
+    setColor(r, g, b)
+    return code
+
 @app.route('/<path:path>')
 def index(path):
-    setColor(0, 255, 255)
+    setColor(config['testLight']['r'], config['testLight']['g'], config['testLight']['b'])
     return send_from_directory('public', path)
+
+@app.route('/testGetWeather')
+def testGetWeather():
+    return getWeatherAndSetColor()
+
+@app.route('/setConfig', methods=['POST'])
+def setConfig():
+    DataPersistor.saveData('data.json', request.get_json())
+    config = request.get_json()
+    return 'done'
 
 
 @app.route('/setColortje', methods=['POST'])
