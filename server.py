@@ -41,6 +41,14 @@ def index(path):
 def testGetWeather():
     return getWeatherAndSetColor()
 
+@app.route('/getConfig')
+def getConfig():
+    return config;
+
+@app.route('/getWeather')
+def getWeather():
+    return TheWeatherMan.getTodaysWeather()['code'];
+
 @app.route('/setConfig', methods=['POST'])
 def setConfig():
     DataPersistor.saveData('data.json', request.get_json())
