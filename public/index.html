@@ -98,7 +98,7 @@ var weatherman;
         $('#weatherCode').text(result);
     });
 
-$('setColor').on('click', function(){
+$('#setColor').on('click', function(){
   // construct an HTTP request
   var xhr = new XMLHttpRequest();
   xhr.open("POST", '/setColortje', true);
@@ -106,6 +106,17 @@ $('setColor').on('click', function(){
 
   // send the collected data as JSON
   xhr.send(JSON.stringify(color));
+
+});
+
+$('#save').on('click', function(){
+  // construct an HTTP request
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", '/setConfig', true);
+  xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+  // send the collected data as JSON
+  xhr.send(JSON.stringify(config));
 
 });
 
@@ -125,15 +136,15 @@ function update(picker) {
         Math.round(picker.hsv[2]) + '%';
 
 color = {
-    r: picker.rgb[0],
-    g: picker.rgb[1],
-    b: picker.rgb[2],
+    r: parseInt(picker.rgb[0], 10),
+    g: parseInt(picker.rgb[1], 10),
+    b: parseInt(picker.rgb[2], 10),
   };
 
   config.weather[$('#weatherCoding').val()].color = {
-    r: picker.rgb[0],
-    g: picker.rgb[1],
-    b: picker.rgb[2],
+    r: parseInt(picker.rgb[0], 10),
+    g: parseInt(picker.rgb[1], 10),
+    b: parseInt(picker.rgb[2], 10),
   };
 
   console.log('lolol', config);
