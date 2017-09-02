@@ -3,7 +3,7 @@ import time
 import datetime
 import threading
 
-from flask import Flask, request, send_from_directory
+from flask import Flask, request, send_from_directory, jsonify
 from persistor import DataPersistor
 from theWeather import TheWeatherMan
 app = Flask(__name__)
