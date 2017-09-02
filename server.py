@@ -43,6 +43,7 @@ def testGetWeather():
 
 @app.route('/getConfig')
 def getConfig():
+    print(config)
     return config;
 
 @app.route('/getWeather')
