@@ -43,7 +43,6 @@ def testGetWeather():
 
 @app.route('/getConfig')
 def getConfig():
-    print(config)
     return jsonify(config);
 
 @app.route('/getWeather')
